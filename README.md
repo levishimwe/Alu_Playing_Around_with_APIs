@@ -23,9 +23,6 @@ Category-based filtering system
 Responsive design for all devices
 Intuitive search functionality
 Easy-to-read weather displays
-Interactive activity cards
-
-
 
 # Technical Stack
 
@@ -35,11 +32,6 @@ HTML5
 CSS3 (with responsive design)
 JavaScript (Vanilla JS)
 
-
-Backend:
-
-Node.js
-Express.js
 
 
 APIs Used:
@@ -51,9 +43,6 @@ Foursquare Places API (for activity recommendations)
 
 Installation and Local Setup
 Prerequisites
-
-Node.js (v14 or higher)
-npm (Node Package Manager)
 API keys for WeatherAPI and Foursquare
 
 # Local Development Setup
@@ -62,24 +51,18 @@ Clone the repository:
 bashCopygit clone https://github.com/levishimwe/Alu_Playing_Around_with_APIs.git
 cd weather-activity-planner
 
-Install dependencies:
-bashCopynpm install
-
 Create a .env file in the root directory:
 CopyWEATHER_API_KEY=your_weather_api_key
 FOURSQUARE_API_KEY=your_foursquare_api_key
 PORT=5500
 
 Start the development server:
-bashCopynpm run dev
-
 Access the application at http://localhost:5500
 
 Deployment Guide
 Server Prerequisites
 
 Ubuntu 20.04 or higher
-Node.js and npm installed
 Nginx installed and configured
 SSL certificates (recommended for production)
 
@@ -114,7 +97,7 @@ nginxCopyupstream backend {
 
 server {
     listen 80;
-    server_name yourdomain.com;
+    server_name levi02.tech;
 
     location / {
         proxy_pass http://backend;
@@ -183,14 +166,6 @@ Implemented responsive design patterns
 
 
 # Future Enhancements
-
-User authentication system
-Personalized activity preferences
-Social sharing features
-Advanced weather alerts
-Integration with calendar applications
-
-
 WeatherAPI for weather data
 Foursquare for places API
 Contributors and testers
